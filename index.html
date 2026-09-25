@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fantasy Football Start/Sit Advisor</title>
+    <meta name="description" content="2026 NFL Fantasy Football start/sit intelligence engine powered by Gemini Flash 3.8. Compare players across positions with real-time 2026 matchup data, injury reports, Vegas lines, and DFS valuations." />
+    <meta property="og:title" content="Fantasy Football Start/Sit Advisor - 2026 Season" />
+    <meta property="og:description" content="2026 NFL Fantasy Football start/sit intelligence engine powered by Gemini Flash 3.8." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              'brand-bg': '#111827', // Gray 900
+              'brand-surface': '#1F2937', // Gray 800
+              'brand-muted': '#374151', // Gray 700
+              'brand-primary': '#3b82f6', // Blue 500
+              'brand-secondary': '#8b5cf6', // Violet 500
+              'brand-text': '#F9FAFB', // Gray 50
+              'brand-subtext': '#9CA3AF', // Gray 400
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-in-out',
+              'glow': 'glow 2s ease-in-out infinite alternate',
+              'bounce-dot': 'bounceDot 1.4s infinite ease-in-out both',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              glow: {
+                'from': {
+                  'box-shadow': '0 0 10px -5px #3b82f6, 0 0 20px -10px #8b5cf6'
+                },
+                'to': {
+                  'box-shadow': '0 0 10px 0px #3b82f6, 0 0 20px 0px #8b5cf6'
+                }
+              },
+              bounceDot: {
+                  '0%, 80%, 100%': { transform: 'scale(0)' },
+                  '40%': { transform: 'scale(1.0)' },
+              }
+            },
+          },
+        },
+      }
+    </script>
+  <script type="module" crossorigin src="/assets/index-DnfpJSPF.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-WdRE7ANZ.css">
+</head>
+  <body class="bg-brand-bg text-brand-text font-sans">
+    <div id="root"></div>
+  </body>
+</html>
